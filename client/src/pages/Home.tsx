@@ -91,7 +91,7 @@ export default function Home() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(130px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
               gap: "1.5rem",
               maxWidth: "900px",
               width: "100%",
@@ -146,37 +146,22 @@ export default function Home() {
                   }}
                   aria-label={`View ${name}'s gallery`}
                 >
-                  {/* First name */}
+                  {/* Full name — displayed as one unit, wraps naturally if needed */}
                   <span
                     style={{
                       fontFamily: "'Quicksand', sans-serif",
                       fontWeight: 700,
-                      fontSize: "clamp(0.75rem, 2.5vw, 1rem)",
+                      fontSize: "clamp(1.1rem, 3.5vw, 1.5rem)",
                       color: palette.text,
                       textAlign: "center",
-                      lineHeight: 1.2,
+                      lineHeight: 1.25,
                       wordBreak: "break-word",
                       hyphens: "auto",
+                      padding: "0 0.25rem",
                     }}
                   >
-                    {name.split(" ")[0]}
+                    {name}
                   </span>
-                  {/* Last name */}
-                  {name.split(" ").length > 1 && (
-                    <span
-                      style={{
-                        fontFamily: "'Quicksand', sans-serif",
-                        fontWeight: 500,
-                        fontSize: "clamp(0.6rem, 1.8vw, 0.78rem)",
-                        color: palette.text + "cc",
-                        textAlign: "center",
-                        lineHeight: 1.2,
-                        marginTop: "0.1rem",
-                      }}
-                    >
-                      {name.split(" ").slice(1).join(" ")}
-                    </span>
-                  )}
                 </button>
               );
             })}

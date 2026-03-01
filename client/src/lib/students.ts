@@ -1,26 +1,24 @@
 // Student list — edit names here to match your actual class roster
 // Names are displayed in alphabetical order on the home page
 export const STUDENT_NAMES: string[] = [
-  "Alice Chen",
-  "Ben Davis",
-  "Chloe Evans",
-  "Daniel Foster",
-  "Emma Garcia",
-  "Felix Harris",
-  "Grace Johnson",
-  "Henry Kim",
-  "Isla Lewis",
-  "Jack Martin",
-  "Katie Nelson",
-  "Liam O'Brien",
-  "Mia Parker",
-  "Noah Quinn",
-  "Olivia Roberts",
-  "Peter Scott",
-  "Quinn Taylor",
-  "Ruby Underwood",
-  "Sam Vasquez",
-  "Tara Williams",
+  "Aden",
+  "Armani",
+  "Chertam",
+  "Davin",
+  "EE",
+  "Ellie",
+  "Insea",
+  "Kris",
+  "Mr Ben",
+  "Ni Ni",
+  "Patty",
+  "Porsche",
+  "Pun",
+  "Punn",
+  "Skylar",
+  "Tisha",
+  "Tongfah",
+  "Yang Yang",
 ].sort();
 
 // 20 distinct soft watercolor pastels — one per student slot
@@ -53,7 +51,7 @@ export const PASTEL_PALETTE: Array<{ light: string; deep: string; text: string }
  * Students always appear alphabetically; only the color assignment shuffles.
  */
 export function getShuffledPaletteIndices(): number[] {
-  const indices = Array.from({ length: 20 }, (_, i) => i);
+  const indices = Array.from({ length: PASTEL_PALETTE.length }, (_, i) => i);
   // Fisher-Yates with Math.random (changes each page load)
   for (let i = indices.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
