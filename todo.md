@@ -1,0 +1,32 @@
+# Student Project Showcase — TODO
+
+- [x] Initialize full-stack project (React + tRPC + MySQL + S3)
+- [x] Home page with 20 student bubbles in alphabetical order
+- [x] Pastel watercolor color palette (20 distinct colors, shuffled each page load)
+- [x] Watercolor background image on home page
+- [x] Bubble hover/press animations (float-in, scale, breathe)
+- [x] Click bubble → navigate to student gallery
+- [x] Student gallery page with matching bubble color background
+- [x] 3x3 photo grid (max 9 photos per student)
+- [x] Photo thumbnails with hover zoom effect
+- [x] Empty state illustration when no photos
+- [x] "Add Photo" button spanning full width (with camera capture on iPad)
+- [x] Gallery full indicator when 9/9 photos uploaded
+- [x] Photo upload via tRPC → S3 storage (base64 → buffer)
+- [x] Lightbox: full-screen photo view on thumbnail click
+- [x] Lightbox: left/right arrow navigation between photos
+- [x] Lightbox: keyboard arrow key navigation
+- [x] Lightbox: X button to close
+- [x] Lightbox: photo counter (e.g. "2 / 5")
+- [x] Teacher mode: password dialog (server-side verification)
+- [x] Teacher mode: delete overlay on each photo in teacher mode
+- [x] Teacher mode: confirm-before-delete dialog
+- [x] Teacher mode: toggle to exit teacher mode
+- [x] Database schema: photos table with studentSlug, fileKey, url, metadata
+- [x] Backend API: photos.list, photos.upload, photos.delete, photos.verifyTeacher
+- [x] TEACHER_PASSWORD stored as secure server-side environment variable
+- [x] Vitest tests for teacher password verification and photo listing
+- [x] Back button from gallery → home page
+- [x] Responsive layout for iPad (auto-fill grid, clamp font sizes)
+- [x] Quicksand + DM Sans fonts loaded via Google Fonts
+- [x] Global CSS animations: bubble-float-in, gallery-fade-in, photo-slide-up
